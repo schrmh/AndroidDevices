@@ -50,7 +50,7 @@ Compared to the scatter file of the non-plus version, I added **EBR2** (based of
 linear_start_addr and physical_start_addr seem to be usually the same, but for **BMTPOOL** I decided against that rule thumb since most scatter files seem to use **0xFFFF00a8** as the linear_start_addr here..
 
 **Please not that I'm not an expert of scatter files. I haven't found any good documentation about them. Also, this is the first device that I needed to create a scatter file by myself for**
-(final [scatter file](LOL)).
+(final [scatter file](How%20to%20root%20SurfTab%20breeze%2010.1%20quad%20plus%20\(ST10408-11\).md)).
 
 To take backups of partitions, you may want to change set `ShowByScatter=true` within `/opt/spflashtool/option.ini` since **Smart Phone Flash Tool** will then show all partitions you can **Read Back** within the **Readback** tab. Turn off your Tablet and just save them all. Maybe also make a backup without that option and save the region until the cache partition. [You can also somehow extract the preloader from that backup](https://www.android-hilfe.de/forum/anleitungen-fuer-mediatek-geraete.2400/anleitung-backup-readback-per-sp-flash-tool.746503.html), but I haven't looked into that so far.
 If you saved all 24 partitions individually as e.g. ROM_0 to ROM_23, then you can check wether everything looks right by mounting the backups of the **ext4 partitions** whose names you get from `adb shell cat /proc/mounts | grep ext4`:
@@ -59,12 +59,12 @@ If you saved all 24 partitions individually as e.g. ROM_0 to ROM_23, then you ca
 /emmc@usrdata /data ext4 rw,seclabel,nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered 0 0
 /emmc@cache /cache ext4 rw,seclabel,nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered 0 0
 ```
-To mount those partitions, you can use losetup:
+To mount those partition backups, you can use **[loop devices](https://en.wikipedia.org/wiki/Loop_device)**:
 ```
 sudo losetup /dev/loop111 ROM_23
 sudo mount /dev/loop111 /mnt
 ```
-(Note that there is a `bootanimation.zip` on one of those partitions, which may be replaceable, if you want another boot animation)
+(Note that there is a `bootanimation.zip` on one of those partitions, which may be replaceable, if you want another boot animation)  
 When done:
 ```
 sudo umount /mnt
