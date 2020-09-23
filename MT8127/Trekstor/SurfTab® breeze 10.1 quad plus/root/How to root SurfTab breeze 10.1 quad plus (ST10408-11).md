@@ -1,9 +1,3 @@
----
-title: How to root SurfTab breeze 10.1 quad plus (ST10408-11)
-created: '2020-09-23T19:18:48.932Z'
-modified: '2020-09-23T21:15:23.899Z'
-====================================
-
 # How to root SurfTab breeze 10.1 quad plus (ST10408-11)
 
 ## Using Arch Linux (5.8.6-arch1-1) in September 2020
