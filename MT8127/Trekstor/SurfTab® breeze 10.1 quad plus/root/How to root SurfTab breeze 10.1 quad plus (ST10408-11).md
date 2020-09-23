@@ -100,11 +100,12 @@ which seems to look fine for me.
 
 ### 3.) Flashing & patching (to gain root rights)
 
-This is just some paranoia at this point, but to be extra safe, I did not flash `boot.img` at first but the `usrdata.img` (renamed partition backup) to **USRDATA** just to verfiy that the flashing works. 
+This is just some paranoia at this point, but to be extra safe, I did not flash `boot.img` at first but the `usrdata.img` (renamed partition backup) to **USRDATA** just to verfiy that the flashing works.  
 Within the **Smart Phone Flash Tool**, you just switch to the **Download** tab, load your scatter file via **Scatter-loading File**, click on the **Location** field in the row of the correct partition, check the checkbox next to it and then press the **Download** button with the green arrow. Turn your tablet off to start the process.
 
-To finally root your device, you can use **Magisk** to [patch the `boot.img`](https://topjohnwu.github.io/Magisk/install.html#boot-image-patching). **There is no custom recovery like TWRP for this device and also no custom ROM at this point.**
+To finally root your device, you can use **Magisk** to [patch the `boot.img`](https://topjohnwu.github.io/Magisk/install.html#boot-image-patching).  
 
+**Please note, that there is no custom recovery like TWRP for this device and also no custom ROM at this point.**
 ### Kernel sources would make this easier, but sadly Trekstor doesn't seem to have published them for this device on [their website](https://www.trekstor.de/opensource.html). Maybe write them a e-mail, a postcard or just call them ([their imprint](https://www.trekstor.de/imprint.html)), since they need to publish them according to licenses.
 
 
