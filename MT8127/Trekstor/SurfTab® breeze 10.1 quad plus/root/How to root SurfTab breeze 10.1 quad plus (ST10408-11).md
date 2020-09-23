@@ -109,5 +109,5 @@ To finally root your device, you can use **Magisk** to [patch the `boot.img`](ht
 ### Kernel sources would make this easier, but sadly Trekstor doesn't seem to have published them for this device on [their website](https://www.trekstor.de/opensource.html). Maybe write them a e-mail, a postcard or just call them ([their imprint](https://www.trekstor.de/imprint.html)), since they need to publish those according to licenses.
 
 **Enjoy your rooted tablet!**
-![Image](rootcheck.png)
+![Image](./rootcheck.png)
 
