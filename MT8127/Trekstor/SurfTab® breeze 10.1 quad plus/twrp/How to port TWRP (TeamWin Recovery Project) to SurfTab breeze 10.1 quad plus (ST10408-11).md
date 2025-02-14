@@ -260,6 +260,6 @@ Now you should be able to always boot into recovery by either pressing a key com
 
 **Enjoy TWRP on your old tablet! ~~And see you in 2030 when I got a custom ROM running on it, hopefully Android 6+ even; tho maybe earlier, at least for another 5.1 one...~~**  
 
+https://github.com/user-attachments/assets/2939c6e4-2650-4c11-9d5b-bed6377fc2fb
 
-
-(Video of the device booting into TWRP and unlocking it:)  
+(Video of the device booting into TWRP and unlocking it)  
