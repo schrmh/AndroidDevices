@@ -1,0 +1,42 @@
+#mount		fstype	device			[device2]		flags
+/boot         	emmc	/dev/bootimg
+/recovery     	emmc	/dev/recovery 					flags=backup=1 # doesn't appear
+/misc         	emmc	/dev/misc # doesn't appear
+/logo		emmc	/dev/logo # doesn't appear
+/system_image   emmc	/dev/block/mmcblk0p6				flags=backup=1;flashimg=1
+/system       	ext4	/dev/block/mmcblk0p6   				flags=display=system # partition label "android"
+/cache        	ext4	/dev/block/mmcblk0p7   				flags=display=cache
+/data         	ext4	/dev/block/mmcblk0p8   				flags=display=data # partition label "usrdata"; excluding /storage
+/storage       	ext4   	/data/media/0                                   flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable # in some places "/sdcard"
+
+# Removable storage
+/sdcard1      	auto	/dev/block/mmcblk1p1     			flags=display="MicroSD p1";storage;wipeingui;removable
+/external_sd  	auto	/dev/block/mmcblk1p2     			flags=display="MicroSD p2";storage;wipeingui;removable
+/usb-otg    	auto	/dev/block/sda1		/dev/block/sda		flags=removable;storage;display=USB-OTG
+
+# spflashtool partition index + label (cat /proc/emmc partno:    start_sect   nr_sects  partition_name)
+# 0 PRELOADER
+# 1 MBR
+# 2 EBR1 (emmc_p1: 00000400 00000002 "ebr1")
+# 3 PRO_INFO
+# 4 NVRAM
+# 5 PROTECT_F (emmc_p2: 00004800 00005000 "protect_f")
+# 6 PROTECT_S (emmc_p3: 00009800 00005000 "protect_s")
+# 7 SECCFG
+# 8 UBOOT
+# 9 BOOTIMG
+# 10 RECOVERY
+# 11 SEC_RO (emmc_p4: 0001ec00 00003000 "sec_ro")
+# 12 MISC
+# 13 LOGO
+# 14 EBR2
+# 15 EXPDB
+# 16 TEE1
+# 17 TEE2
+# 18 KB
+# 19 DKB
+# 20 FRP (emmc_p5: 0002ec00 00000800 "frp")
+# 21 ANDROID (emmc_p6: 0002f400 0047e000 "android"
+# 22 CACHE (emmc_p7: 004ad400 00080000 "cache")
+# 23 USRDATA (emmc_p8: 0052d400 008e0400 "usrdata")
+# 24 BMTPOOL
