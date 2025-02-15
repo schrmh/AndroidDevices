@@ -6,7 +6,7 @@
 
 ### 0.) Foreword
 
-I recently just felt like giving this another go. When I tried using this by following a tutorial that used Carlvic I just did not get some files that are mandatory. Funnily, just about one week after I released the tutorial to root this device, some tool that makes porting TWRP almost piss easy got released.  
+I recently just felt like giving this another go. When I tried using this by following tutorials that used Carlvic and Android-Image-Kitchen just did not get some files that are mandatory. Funnily, just about one week after I released the tutorial to root this device, some tool that makes porting TWRP almost piss easy got released.  
 There are some general guides using it (e.g. on their [wiki](https://github.com/twrpdtgen/twrpdtgen/wiki/3.-Create-a-device-tree) or 
 [here](https://xdaforums.com/t/building-twrp-for-an-unsupported-unknown-device.4699437/) and
 [here](https://xdaforums.com/t/guide-zero-to-hero-what-to-do-when-your-phone-has-nothing-no-twrp-no-custom-roms.4627809/) including some videos.)  
