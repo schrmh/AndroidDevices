@@ -1,5 +1,8 @@
 # Device codename ST10408-11
 
+## Chat
+https://matrix.to/#/#trekstor-surftab-breeze-101-quad-plus:matrix.org
+
 ## Guides
 [Backup via spflashtool5 & Rooting via Magisk](root/How%20to%20root%20SurfTab%20breeze%2010.1%20quad%20plus%20(ST10408-11).md)  
 [Porting TWRP recovery](twrp/How%20to%20port%20TWRP%20(TeamWin%20Recovery%20Project)%20to%20SurfTab%20breeze%2010.1%20quad%20plus%20(ST10408-11).md)  
