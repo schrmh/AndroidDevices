@@ -7,7 +7,8 @@
 ### 0.) Foreword
 
 I recently just felt like giving this another go. When I tried using this by following a tutorial that used Carlvic I just did not get some files that are mandatory. Funnily, just about one week after I released the tutorial to root this device, some tool that makes porting TWRP almost piss easy got released.  
-There are some general guides using it (e.g. [here](https://xdaforums.com/t/building-twrp-for-an-unsupported-unknown-device.4699437/) and
+There are some general guides using it (e.g. on their [wiki](https://github.com/twrpdtgen/twrpdtgen/wiki/3.-Create-a-device-tree) or 
+[here](https://xdaforums.com/t/building-twrp-for-an-unsupported-unknown-device.4699437/) and
 [here](https://xdaforums.com/t/guide-zero-to-hero-what-to-do-when-your-phone-has-nothing-no-twrp-no-custom-roms.4627809/) including some videos.)  
 Another thing to note is that AlaskaLinuxUser recommended in a video guide building for some known device like shamu (Nexus 6) first to be safe that everything is set up correctly but the funny thing is that I actually wasn't able to succeed in building for that; in the process I contined to get errors when I didn't in the process for our device anymore.  
 
