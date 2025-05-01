@@ -70,7 +70,7 @@ To get english output (and maybe less issues... cause I had kernels that only co
 
 In `./arch/arm/configs/` are a lot of defconfigs.  
 You might recall capri from earlier getprop output. Let's grep for that:  
-`adb getprop | grep capri`
+`adb shell getprop | grep capri`
 ```
 [ro.board.platform]: [capri]
 [ro.chipname]: [capri]
@@ -101,7 +101,7 @@ I got the following 18 results from that:
 ./arch/arm/configs/bcm28155_capri_ss_baffinss_rev03_defconfig
 ```
 What I noticed is that there are various rev(isions). And I think you can also grep for that?:  
-`adb getprop | grep revision`
+`adb shell getprop | grep revision`
 ```
 [ro.revision]: [5]
 ```
