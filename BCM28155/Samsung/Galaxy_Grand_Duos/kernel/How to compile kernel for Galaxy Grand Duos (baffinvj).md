@@ -27,7 +27,7 @@ My version specifically got released in Thailand. That's why there is the L at t
 [ro.product_ship]: [true]
 ```
 (if you got several devices connected, `export ANDROID_SERIAL`)
-For this device I've got GT-I9082_MEA_JB_Opensource.zip from https://opensource.samsung.com/.  
+For this device I've got [GT-I9082_MEA_JB_Opensource.zip](./GT-I9082_MEA_JB_Opensource.zip) from https://opensource.samsung.com/.  
 I actually asked them late January 2024 to upload kernel source code for my device cause they already had it for SEA.  
 And compiling it worked for me but I figured there would be no harm in asking for the minor different regional version for my device. And guess what? THEY (RE-)UPLOADED GT-I9082_MEA_JB_Opensource.zip and kept it until earlier this year I think. They actually spent time for a device that was already a bit over ten years old. I really never liked Samsung that much for overpriced devices but there aren't many companies that just deliver source code with barely any trouble.  
 
@@ -201,4 +201,4 @@ Odin or heimdall might also work but I'm not sure.
 Next time I will build the recovery. So in case you don't already have it... you will get it.
 
 **Enjoy your kernel!**
-
+![Image](./about_device_page.png)
