@@ -9,7 +9,7 @@
 I think that this should work for other baffin variants as well.  
 Some are here: https://desktop.firmware.mobi/device:1330  
 My version specifically got released in Thailand. That's why there is the L at the end of product version (L for latin america?):  
-`adb shell getprop | grep platform`
+`adb shell getprop | grep product`
 ```
 [ro.build.product]: [baffin]
 [ro.product.board]: [capri]
