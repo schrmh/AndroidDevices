@@ -61,13 +61,13 @@ repo sync
 (After that you will see 35 GB of storage used. Maybe less if you use shallow clones. The repo mentioned in the commands contains a bit of info in the README that might be worth a read.)  
 
 Copy our device tree in:  
-`cp ../output/ minTWRPOmni511/device`  
+`cp -r ../output/* device`  
 
 
 Usually you should now be able to just build, but there will be some issues.  
 E.g. there is a bug in `lunch`; it can't handle the hyphen-minus (-) symbol in our device codename. So I just replaced it with a underscore/low line (_):  
 ```
-cd minTWRPOmni511/device/trekstor/ST10408-11
+cd device/trekstor/ST10408-11
 mv omni_ST10408-11.mk omni_ST10408_11.mk
 sed -i 's/ST10408-11/ST10408_11/g' setup-makefiles.sh BoardConfig.mk device.mk vendorsetup.sh AndroidProducts.mk extract-files.sh omni_ST10408_11.mk Android.mk
 cd ..
